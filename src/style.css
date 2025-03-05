@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15%;
+    height: 10%;
     animation: slideDown 0.5s linear;
     box-shadow: 0px 10px 10px rgb(232, 231, 231);
 }
@@ -643,7 +643,6 @@ body {
     }
 }
 
-
 .mainFooter {
     display: flex;
     width: 90%;
@@ -657,7 +656,6 @@ body {
     width: 40%;
     flex-direction: column;
 }
-
 
 .iconNLogoFooter {
     display: flex;
@@ -721,7 +719,6 @@ body {
 }
 
 .lastFooter {
-    /* margin:1rem 0; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -740,5 +737,26 @@ body {
         align-items: center;
         margin-top: 3rem;
         gap:2rem;
+        width: 100%;
+        margin-left:5rem;
+        align-items: start;
+    }
+
+    .leftFooter{
+        width:100%;
+    }
+
+    .rightFooter{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .leftFooter{
+        width:50%;
+    }
+
+    .mainFooter{
+        margin-left: 3rem;
     }
 }
