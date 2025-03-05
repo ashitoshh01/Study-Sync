@@ -521,7 +521,7 @@ body {
 
 .latestUpdateContainer {
     display: flex;
-    width: 95%;
+    width: 90%;
     border-radius: 1rem;
     margin: 2.5rem auto;
     background-color: var(--light-gray);
@@ -536,7 +536,7 @@ body {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     object-fit: cover;
-    height: 15em;
+    height: 17em;
     width: 100%;
 }
 
@@ -559,7 +559,7 @@ body {
 .latestInputNButton {
     display: flex;
     margin: 1rem 0;
-    gap: 0.5rem;
+    gap: 2%;
 }
 
 .latestInputNButton input {
@@ -643,10 +643,15 @@ body {
     }
 }
 
+footer{
+    width:100%;
+}
+
 .mainFooter {
     display: flex;
     width: 90%;
     margin: 0 auto;
+    overflow-x: hidden;
     margin-bottom: 4.5rem;
 }
 
