@@ -22,7 +22,7 @@
 body {
     overflow-x: hidden;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -207,6 +207,12 @@ body {
     background-color: rgb(48, 48, 48);
 }
 
+@media screen and (max-width:400px){
+    .heroButton{
+        text-align: center;
+    }
+}
+
 .hero-image {
     height: 25em;
     width: 25em;
@@ -387,7 +393,9 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: hidden;
     margin-top: 2em;
     margin-bottom: 2em;
     display: grid;
@@ -522,6 +530,7 @@ body {
 .latestUpdateContainer {
     display: flex;
     width: 90%;
+    overflow-x: hidden;
     border-radius: 1rem;
     margin: 2.5rem auto;
     background-color: var(--light-gray);
@@ -743,7 +752,8 @@ footer{
         margin-top: 3rem;
         gap:2rem;
         width: 100%;
-        margin-left:5rem;
+        padding-left: 3rem;
+        overflow-y: hidden;
         align-items: start;
     }
 
@@ -762,6 +772,6 @@ footer{
     }
 
     .mainFooter{
-        margin-left: 3rem;
+        padding-left: 3rem;
     }
 }
