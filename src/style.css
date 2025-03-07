@@ -585,18 +585,21 @@ body {
     box-shadow: 0px 2px 6px var(--gray);
 }
 
-.latestInputNButton button {
+.latestButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--primary-color);
     border-radius: 0.25rem;
     width: 13%;
     color: white;
 }
 
-.latestInputNButton button:focus {
-    outline: none;
-    border: 2px solid var(--primary-color);
-    box-shadow: none;
+.hrefButton{
+    color: var(--background-color);
+    text-decoration: none;
 }
+
 
 .latestInputNButton button:hover {
     background-color: var(--link-color);
@@ -703,7 +706,8 @@ footer{
 .rightFooter {
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 10px));
+    justify-content: center;
     gap: 2rem;
 }
 
