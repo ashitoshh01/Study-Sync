@@ -207,8 +207,8 @@ body {
     background-color: rgb(48, 48, 48);
 }
 
-@media screen and (max-width:400px){
-    .heroButton{
+@media screen and (max-width:400px) {
+    .heroButton {
         text-align: center;
     }
 }
@@ -585,7 +585,7 @@ body {
     box-shadow: 0px 2px 6px var(--gray);
 }
 
-.latestButton{
+.latestButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -595,14 +595,32 @@ body {
     color: white;
 }
 
-.hrefButton{
+.hrefButton {
     color: var(--background-color);
     text-decoration: none;
 }
 
 
-.latestInputNButton button:hover {
+.latestButton:hover {
     background-color: var(--link-color);
+}
+
+@media screen and (max-width:350px){
+    .hrefButton{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:300px){
+    .hrefButton{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:270px){
+    .hrefButton{
+        font-size: 0.7rem;
+    }
 }
 
 
@@ -650,17 +668,18 @@ body {
         width: 80%
     }
 
-    .latestInputNButton button {
+    .latestButton {
         width: 20%;
     }
 }
 
-footer{
-    width:100%;
+footer {
+    width: 100%;
 }
 
 .mainFooter {
     display: flex;
+    justify-content: space-evenly;
     width: 90%;
     margin: 0 auto;
     overflow-x: hidden;
@@ -706,7 +725,7 @@ footer{
 .rightFooter {
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 10px));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     justify-content: center;
     gap: 2rem;
 }
@@ -748,34 +767,34 @@ footer{
     padding: 1rem;
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:680px) {
     .mainFooter {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 3rem;
-        gap:2rem;
+        gap: 2rem;
         width: 100%;
         padding-left: 3rem;
         overflow-y: hidden;
         align-items: start;
     }
 
-    .leftFooter{
-        width:100%;
+    .leftFooter {
+        width: 100%;
     }
 
-    .rightFooter{
-        width: 70%;
+    .rightFooter {
+        width: 100%;
     }
 }
 
-@media screen and (max-width:400px){
-    .leftFooter{
-        width:50%;
+@media screen and (max-width:400px) {
+    .leftFooter {
+        width: 50%;
     }
 
-    .mainFooter{
+    .mainFooter {
         padding-left: 3rem;
     }
 }
